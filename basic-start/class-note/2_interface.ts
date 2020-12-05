@@ -21,3 +21,23 @@ const younghee = {
 };
 
 getUser(younghee)
+
+
+
+interface SumFuntion {
+  (a: number, b: number): number;
+}
+
+let sum2:SumFuntion;
+
+sum2 = (a:number, b:number) : number => {
+  return a + b;
+}
+
+
+interface StringArray {
+  [index: number]: string;
+}
+
+var arr:StringArray = ['a', 'b', 'c'];
+arr[0];
