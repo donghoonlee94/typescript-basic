@@ -41,3 +41,34 @@ interface StringArray {
 
 var arr:StringArray = ['a', 'b', 'c'];
 arr[0];
+
+interface StringRegexDictionary {
+  [key: string]: RegExp;
+}
+
+var obj2:StringRegexDictionary = {
+  sth: /abc/,
+  cssFile: /\.css$/,
+}
+
+// value: string
+Object.keys(obj2).forEach(value => {
+
+})
+
+
+// interface extend
+interface Person {
+  name :string;
+  age: number;
+}
+
+interface Developer extends Person{
+  language: string;
+}
+
+var obj3:Developer = {
+  name: 'hoon',
+  age: 30,
+  language: 'string',
+}
