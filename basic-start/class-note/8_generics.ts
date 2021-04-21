@@ -4,3 +4,5 @@ function logText<T>(text: T):T {
 }
 
 logText<String>('2');
+
+const number = logText<Number>(2);
